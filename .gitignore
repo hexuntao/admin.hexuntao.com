@@ -3,5 +3,4 @@ node_modules
 *.local
 
 # compiled output
-dist
 tmp
