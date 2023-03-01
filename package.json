@@ -16,6 +16,7 @@
     "dev:demo": "vite --mode demo",
     "build": "vite build",
     "build:demo": "vite build --mode demo",
+    "deploy": "yarn build && yarn serve",
     "serve": "vite preview",
     "lint": "eslint --ext .ts,.tsx src/",
     "format": "npm run lint --fix",
