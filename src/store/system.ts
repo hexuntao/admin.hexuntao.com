@@ -34,27 +34,7 @@ export function getArticleCalendar() {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
   return nodepress
     .get<Array<ArticleCalendarItem>>('/article/calendar', { params: { timezone } })
-    .then((response) => {
-      return [
-        { count: 1, date: '2023-01-04' },
-        { count: 1, date: '2023-01-05' },
-        { count: 2, date: '2023-01-06' },
-        { count: 3, date: '2023-01-07' },
-        { count: 5, date: '2023-01-08' },
-        { count: 2, date: '2023-01-09' },
-        { count: 1, date: '2023-01-14' },
-        { count: 4, date: '2023-01-18' },
-        { count: 2, date: '2023-01-27' },
-        { count: 33, date: '2023-02-01' },
-        { count: 2, date: '2023-02-04' },
-        { count: 13, date: '2023-02-05' },
-        { count: 11, date: '2023-02-06' },
-        { count: 1, date: '2023-02-07' },
-        { count: 3, date: '2023-02-20' },
-        { count: 5, date: '2023-03-02' },
-        { count: 1, date: '2023-03-07' },
-      ]
-    })
+    .then((response) => response.result)
 }
 
 /** 获取 GA Token */

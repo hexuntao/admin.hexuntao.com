@@ -32,13 +32,13 @@ export const StatisticsComponent: React.FC = () => {
                 <Statistic
                   loading={loading.state.value}
                   title="今日阅读"
-                  value={statistics.value.todayViews || 10}
+                  value={statistics.value.todayViews || 0}
                 />
                 <Divider type="vertical" />
                 <Statistic
                   loading={loading.state.value}
                   title="累计文章阅读"
-                  value={statistics.value.totalViews || 980}
+                  value={statistics.value.totalViews || 0}
                 />
               </Space>
             </Col>
@@ -56,7 +56,7 @@ export const StatisticsComponent: React.FC = () => {
                 <Statistic
                   loading={loading.state.value}
                   title="累计获得喜欢"
-                  value={statistics.value.totalLikes || 99}
+                  value={statistics.value.totalLikes || 0}
                 />
                 {/* <Divider type="vertical" /> */}
                 {/* <Statistic
@@ -80,19 +80,19 @@ export const StatisticsComponent: React.FC = () => {
                 <Statistic
                   loading={loading.state.value}
                   title="全站评论"
-                  value={statistics.value.comments || 139}
+                  value={statistics.value.comments || 0}
                 />
                 <Divider type="vertical" />
                 <Statistic
                   loading={loading.state.value}
                   title="文章"
-                  value={statistics.value.articles || 89}
+                  value={statistics.value.articles || 0}
                 />
                 <Divider type="vertical" />
                 <Statistic
                   loading={loading.state.value}
                   title="标签"
-                  value={statistics.value.tags || 20}
+                  value={statistics.value.tags || 0}
                 />
               </Space>
             </Col>
