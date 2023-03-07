@@ -1,6 +1,6 @@
 {
   "name": "admin.hexuntao.com",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "个人博客 admin 后台",
   "private": true,
   "author": "hexuntao",
@@ -19,8 +19,7 @@
     "deploy": "yarn build && yarn serve",
     "serve": "vite preview",
     "lint": "eslint --ext .ts,.tsx src/",
-    "format": "npm run lint --fix",
-    "release": ". ./scripts/release.sh"
+    "format": "npm run lint --fix"
   },
   "dependencies": {
     "antd": "^4.22.0",

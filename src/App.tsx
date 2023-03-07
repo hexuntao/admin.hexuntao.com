@@ -44,10 +44,6 @@ const RouterComponent: React.FC = (props) => {
 export const App: React.FC = () => {
   const loadingState = useReactivity(() => loading.state)
 
-  onMounted(() => {
-    console.info(`Run! env: ${ENV}, vite env: ${JSON.stringify(VITE_ENV)}`)
-  })
-
   return (
     <div className="app" id="app">
       <LoadingBar

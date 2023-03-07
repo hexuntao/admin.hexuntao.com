@@ -11,8 +11,8 @@ import { getResourceUrl } from '@/transforms/url'
 
 const DEFAULT_ADMIN_INFO: Auth = Object.freeze({
   name: 'Admin',
-  slogan: 'NodePress',
-  avatar: getResourceUrl('/images/profile/logo-smooth.png'),
+  slogan: '',
+  avatar: '',
 })
 
 const data = reactive({ ...DEFAULT_ADMIN_INFO })

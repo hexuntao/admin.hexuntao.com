@@ -1,6 +1,6 @@
 import { UserConfig } from 'vite'
 
-const DEMO_BASE_PATH = '/veact-admin/'
+const DEMO_BASE_PATH = '/'
 
 export const demoConfiger = (defaultConfig: UserConfig): UserConfig => {
   return {

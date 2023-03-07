@@ -101,13 +101,11 @@ export const AppSider: React.FC<AppSiderProps> = (props) => {
   return (
     <div className={styles.siderMenu}>
       <Link to={rc(RouteKey.Dashboard).path} className={styles.logo}>
-        {/* <img
+        <img
           alt="logo"
           className={classnames(styles.image, props.isSiderCollapsed && styles.collapsed)}
-          src={getResourceUrl(
-            props.isSiderCollapsed ? `/images/logo.mini.svg` : `/images/logo.svg`
-          )}
-        /> */}
+          src={getResourceUrl(`/logo.png`)}
+        />
       </Link>
       {/* <Spin spinning={admin.loading.value} size="small">
         <div className={styles.userInfo}>
@@ -134,7 +132,7 @@ export const AppSider: React.FC<AppSiderProps> = (props) => {
         defaultOpenKeys={[rc(RouteKey.Article).path]}
         items={mainMenuItems.value}
       />
-      <Menu
+      {/* <Menu
         className={styles.footerLink}
         mode="vertical"
         selectedKeys={[]}
@@ -146,7 +144,7 @@ export const AppSider: React.FC<AppSiderProps> = (props) => {
             onClick: () => window.open(GITHUB_REPO_URL),
           },
         ]}
-      />
+      /> */}
     </div>
   )
 }

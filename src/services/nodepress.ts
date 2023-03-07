@@ -79,19 +79,19 @@ nodepress.interceptors.response.use(
   (response) => {
     if (!response.headers['content-type']?.includes('json')) {
       loading.complete()
-      notification.success({
-        message: '数据请求成功',
-        description: response.statusText,
-        duration: 2,
-      })
+      // notification.success({
+      //   message: '数据请求成功',
+      //   description: response.statusText,
+      //   duration: 2,
+      // })
       return response
     } else if (response.data.status === HTTPStatus.Success) {
       loading.complete()
-      notification.success({
-        message: '数据请求成功',
-        description: response.data.message,
-        duration: 2,
-      })
+      // notification.success({
+      //   message: '数据请求成功',
+      //   description: response.data.message,
+      //   duration: 2,
+      // })
       return Promise.resolve(response.data)
     } else {
       loading.fail()

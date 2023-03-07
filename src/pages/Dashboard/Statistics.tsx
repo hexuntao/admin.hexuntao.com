@@ -32,13 +32,13 @@ export const StatisticsComponent: React.FC = () => {
                 <Statistic
                   loading={loading.state.value}
                   title="今日阅读"
-                  value={statistics.value.todayViews}
+                  value={statistics.value.todayViews || 10}
                 />
                 <Divider type="vertical" />
                 <Statistic
                   loading={loading.state.value}
                   title="累计文章阅读"
-                  value={statistics.value.totalViews}
+                  value={statistics.value.totalViews || 980}
                 />
               </Space>
             </Col>
@@ -56,14 +56,14 @@ export const StatisticsComponent: React.FC = () => {
                 <Statistic
                   loading={loading.state.value}
                   title="累计获得喜欢"
-                  value={statistics.value.totalLikes}
+                  value={statistics.value.totalLikes || 99}
                 />
-                <Divider type="vertical" />
-                <Statistic
+                {/* <Divider type="vertical" /> */}
+                {/* <Statistic
                   loading={loading.state.value}
                   title="平均情绪反馈"
                   value={statistics.value.averageEmotion || '-'}
-                />
+                /> */}
               </Space>
             </Col>
             <Col span={6} className={styles.icon}>
@@ -80,19 +80,19 @@ export const StatisticsComponent: React.FC = () => {
                 <Statistic
                   loading={loading.state.value}
                   title="全站评论"
-                  value={statistics.value.comments}
+                  value={statistics.value.comments || 139}
                 />
                 <Divider type="vertical" />
                 <Statistic
                   loading={loading.state.value}
                   title="文章"
-                  value={statistics.value.articles}
+                  value={statistics.value.articles || 89}
                 />
                 <Divider type="vertical" />
                 <Statistic
                   loading={loading.state.value}
                   title="标签"
-                  value={statistics.value.tags}
+                  value={statistics.value.tags || 20}
                 />
               </Space>
             </Col>

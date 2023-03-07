@@ -54,7 +54,7 @@ export const AppLayout: React.FC = (props) => {
             <AppContent>{props?.children}</AppContent>
           </Layout.Content>
           <Layout.Footer className={styles.appFooter}>
-            <Space size="small">@Hexuntao</Space>
+            <Space size="small">&copy; {new Date().getFullYear()} · Hexuntao</Space>
           </Layout.Footer>
         </Layout>
       </Layout>
